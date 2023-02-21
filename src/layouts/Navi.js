@@ -25,7 +25,7 @@ export default function Navi() {
      </button>
      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
      <li class="nav-item">
-           <a class="nav-link active text-white" aria-current="page" href="#">Messages</a>
+           <a class="nav-link active text-white" aria-current="page" href="#">Mesages</a>
          </li>
          <li class="nav-item">
            
