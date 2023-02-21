@@ -91,7 +91,12 @@
 }
 
 .sepetdetailinput{
-    width: 15%;
+    width: 25%;
+}
+
+.total{
+    border-top: 2px solid #202b38;
+    
 }
 
 
