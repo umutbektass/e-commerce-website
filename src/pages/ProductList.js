@@ -15,7 +15,7 @@ export default function ProductList() {
     const filters = useSelector(state=>state.product.filters)
     
     return (
-  <div>
+  <div className="productlist">
     
       <div className="row">
         

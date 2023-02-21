@@ -32,7 +32,7 @@
 .card p{
     text-decoration: none;
 }
-.card img:hover{
+.productlist .card img:hover{
     transform: scale(1.1);
     transition: 0.7s;
 }
@@ -90,6 +90,9 @@
     margin: 0;
 }
 
+.sepetdetailinput{
+    width: 15%;
+}
 
 
 
