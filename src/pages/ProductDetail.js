@@ -6,6 +6,8 @@ import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { addToBasket } from '../redux/basketSlice/basketSlice'
 import { useDispatch } from 'react-redux'
+import { Rating } from 'react-simple-star-rating'
+
 import '../style.css'
 export default function ProductDetail() {
   
@@ -86,7 +88,8 @@ export default function ProductDetail() {
   
   <div class="card-body">
     <h5 class="card-title">{products.brand} {products.title}</h5>
-    <h6 class="card-subtitle my-5 text-primary">{products.rating} Ürün puan değerlendirmesi </h6>
+    <h6 class="card-subtitle my-5 text-primary"><Rating initialValue={products.rating} readonly={true} allowFraction={true} size={27} /> {products.rating}
+ </h6>
     <h5 class="card-text mb-2 text-success">${products.price}</h5>
     <p class="card-text">{products.description}</p>
     <button className="btn btn-primary" onClick={()=>dispatch(addToBasket(products))}>Sepete ekle</button>

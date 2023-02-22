@@ -1,19 +1,20 @@
 import React from 'react'
-import { Link} from 'react-router-dom'
 import { useSelector,useDispatch } from "react-redux";
 import { categoriesFilters } from '../redux/productSlice/productSlice';
+import { Rating } from 'react-simple-star-rating'
+
 
 export default function Categories() {
   const dispatch = useDispatch()
   let products = useSelector(state=>state.product.items)
   let produstCategoris = []
- 
   
 products.map((item)=>(
   produstCategoris.push(item.category)
 ))
 
 let uniqueChars = [...new Set(produstCategoris)];
+let rating = 2.6
 
   return (
     <div>
@@ -28,7 +29,8 @@ let uniqueChars = [...new Set(produstCategoris)];
         ))
       }
       </ul>
-  
+      <Rating initialValue={rating} readonly={true} allowFraction={true} />
+
     </div>
   )
 }

@@ -24,7 +24,7 @@ export default function ProductList() {
          
          filters.map(item=>(
             
-            <div className="col-xs-4 col-sm-6 col-md-4 col-lg-3 my-2">
+            <div className="col-xs-6 col-sm-6 col-md-4 col-lg-3 my-2">
               <Link to={`/product/${item.id}`} style={{textDecoration:"none"}}>
               <div class="card text-dark" style={{width:"11rem",height:"19rem"}}>
           <img src={item.thumbnail} class="card-img p-3" alt="..." style={{height:"9rem"}}></img>

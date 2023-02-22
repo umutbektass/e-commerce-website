@@ -3,6 +3,7 @@ import { basket ,incrementBasket,descrementBasket} from '../redux/basketSlice/ba
 import { useSelector ,useDispatch} from 'react-redux'
 import { DropdownItem } from 'reactstrap'
 import Mastercard from '../img/mastercard.jpg'
+
 function SepetDetail() {
   const dispatch = useDispatch()
   const basketDetail = useSelector(basket)
