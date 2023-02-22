@@ -29,7 +29,6 @@ let rating = 2.6
         ))
       }
       </ul>
-      <Rating initialValue={rating} readonly={true} allowFraction={true} />
 
     </div>
   )
